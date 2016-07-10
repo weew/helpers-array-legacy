@@ -82,7 +82,7 @@ if ( ! function_exists('array_set')) {
             $key = array_shift($keys);
 
             if ( ! isset($array[$key]) || ! is_array($array[$key])) {
-                $array[$key] = [];
+                $array[$key] = array();
             }
 
             $array = &$array[$key];
@@ -140,10 +140,10 @@ if ( ! function_exists('array_add')) {
      * @return array
      */
     function array_add(array &$array, $key, $value) {
-        $target = array_get($array, $key, []);
+        $target = array_get($array, $key, array());
 
         if ( ! is_array($target)) {
-            $target = [$target];
+            $target = array($target);
         }
 
         $target[] = $value;
@@ -217,7 +217,7 @@ if ( ! function_exists('array_reset')) {
      * @return array
      */
     function array_reset(array $array, $deep = false) {
-        $target = [];
+        $target = array();
 
         foreach ($array as $key => $value) {
             if ($deep && is_array($value)) {
@@ -245,7 +245,7 @@ if ( ! function_exists('array_dot')) {
      * @return array
      */
     function array_dot(array $array, $prepend = '') {
-        $results = [];
+        $results = array();
 
         foreach ($array as $key => $value) {
             if (is_array($value)) {
@@ -268,7 +268,7 @@ if ( ! function_exists('array_extend')) {
      * @return array
      */
     function array_extend(array $arrays) {
-        $merged = [];
+        $merged = array();
 
         foreach (func_get_args() as $array) {
             foreach ($array as $key => $value) {
@@ -294,7 +294,7 @@ if ( ! function_exists('array_extend_distinct')) {
      * @return array
      */
     function array_extend_distinct(array $arrays) {
-        $merged = [];
+        $merged = array();
 
         foreach (func_get_args() as $array) {
             foreach ($array as $key => $value) {
@@ -326,7 +326,7 @@ if ( ! function_exists('array_is_associative')) {
      * @return bool
      */
     function array_is_associative(array $array) {
-        if ($array == []) {
+        if ($array == array()) {
             return true;
         }
 
@@ -353,7 +353,7 @@ if ( ! function_exists('array_is_indexed')) {
      * @return bool
      */
     function array_is_indexed(array $array) {
-        if ($array == []) {
+        if ($array == array()) {
             return true;
         }
 
