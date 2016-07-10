@@ -1,9 +1,9 @@
 # Array helpers
 
-[![Build Status](https://img.shields.io/travis/weew/php-helpers-array.svg)](https://travis-ci.org/weew/php-helpers-array)
-[![Test Coverage](https://img.shields.io/coveralls/weew/php-helpers-array.svg)](https://coveralls.io/github/weew/php-helpers-array)
-[![Version](https://img.shields.io/packagist/v/weew/php-helpers-array.svg)](https://packagist.org/packages/weew/php-helpers-array)
-[![Licence](https://img.shields.io/packagist/l/weew/php-helpers-array.svg)](https://packagist.org/packages/weew/php-helpers-array)
+[![Build Status](https://img.shields.io/travis/weew/php-helpers-array-legacy.svg)](https://travis-ci.org/weew/php-helpers-array-legacy)
+[![Test Coverage](https://img.shields.io/coveralls/weew/php-helpers-array-legacy.svg)](https://coveralls.io/github/weew/php-helpers-array-legacy)
+[![Version](https://img.shields.io/packagist/v/weew/php-helpers-array-legacy.svg)](https://packagist.org/packages/weew/php-helpers-array-legacy)
+[![Licence](https://img.shields.io/packagist/l/weew/php-helpers-array-legacy.svg)](https://packagist.org/packages/weew/php-helpers-array-legacy)
 
 ## Table of contents
 
@@ -28,11 +28,11 @@
 
 ## Installation
 
-`composer require weew/php-helpers-array`
+`composer require weew/php-helpers-array-legacy`
 
 ## Introduction
 
-This tiny library provides various helper functions to deal with arrays.
+This tiny library provides various helper functions to deal with arrays. This is a backport of the [weew/php-array-helpers](https://github.com/weew/php-helpers-array-legacy) library in order to add support for older PHP versions.
 
 ## Functions
 
