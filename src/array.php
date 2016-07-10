@@ -107,7 +107,7 @@ if ( ! function_exists('array_remove')) {
         $original = &$array;
 
         if ( ! is_array($keys)) {
-            $keys = [$keys];
+            $keys = array($keys);
         }
 
         foreach ((array) $keys as $key) {
