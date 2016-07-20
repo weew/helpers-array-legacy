@@ -32,7 +32,7 @@
 
 ## Introduction
 
-This tiny library provides various helper functions to deal with arrays. This is a backport of the [weew/php-array-helpers](https://github.com/weew/helpers-array-legacy) library in order to add support for older PHP versions.
+This tiny library provides various helper functions to deal with arrays. This is a backport of the [weew/array-helpers](https://github.com/weew/helpers-array-legacy) library in order to add support for older PHP versions.
 
 ## Functions
 
